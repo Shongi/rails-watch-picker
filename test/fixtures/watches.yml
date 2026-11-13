@@ -1,0 +1,20 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brand: Orient
+  name: Triton
+  image_path: watches/triton.jpeg
+  selected: false
+
+two:
+  brand: Hamilton
+  name: Khaki Field King
+  image_path: watches/king.jpeg
+  selected: false
+
+selected_watch:
+  brand: Citizen
+  name: Promaster Nighthawk
+  image_path: watches/nighthawk.jpeg
+  selected: true
+  last_selected_at: <%= Time.zone.now %>

@@ -1,0 +1,24 @@
+<header>
+  <h1>My Watches</h1>
+
+  <%= form_tag randomize_watches_path, method: :post do %>
+    <button type="submit" class="randomize-button" onclick="setTimeout(() => { this.disabled=true; this.textContent='Selecting...'; }, 10);">Randomize</button>
+  <% end %>
+</header>
+
+<% if @watches.empty? %>
+  <div class="no-watches">
+    <p>No watches available. Please check back later!</p>
+  </div>
+<% else %>
+  <div class="watch-grid">
+    <% @watches.each do |watch| %>
+      <div class="watch-card">
+        <%= image_tag watch.image_path, class: 'watch-image', loading: :lazy, alt: "#{watch.brand} #{watch.name} watch" %>
+        <div class="watch-info">
+          <%= watch.brand %> - <%= watch.name %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% end %>

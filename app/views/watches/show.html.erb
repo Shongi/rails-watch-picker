@@ -1,0 +1,13 @@
+<div class="show-container">
+  <h1>The watch for the day is <%= @watch.brand %> <%= @watch.name %></h1>
+
+  <div class="watch-show">
+    <div class="watch-show-card">
+      <%= image_tag @watch.image_path, class: 'watch-image', alt: "#{@watch.brand} #{@watch.name} watch" %>
+    </div>
+  </div>
+
+  <div class="actions">
+    <%= link_to 'Back to Collection', watches_path, class: 'back-button' %>
+  </div>
+</div>

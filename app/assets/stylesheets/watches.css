@@ -1,0 +1,172 @@
+.watch-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background: white;
+  transition: transform 0.2s;
+}
+
+.watch-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.watch-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.watch-info {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.randomize-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.randomize-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.watch-show-card {
+  max-width: 500px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header {
+  width: 100%;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.randomize-button {
+  padding: 12px 24px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.watch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .watch-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .watch-card {
+    padding: 10px;
+  }
+
+  .watch-info {
+    font-size: 12px;
+  }
+
+  header {
+    padding: 15px 10px;
+  }
+
+  .randomize-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .watch-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Show page styles */
+.show-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.watch-show {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.watch-show-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.back-button {
+  padding: 12px 24px;
+  background-color: #6c757d;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}
+
+@media (max-width: 768px) {
+  .actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .show-container {
+    padding: 15px;
+  }
+}
+
+/* No watches message */
+.no-watches {
+  text-align: center;
+  padding: 50px 20px;
+  font-size: 18px;
+  color: #666;
+}
