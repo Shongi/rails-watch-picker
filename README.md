@@ -61,8 +61,10 @@ docker run -p 3000:3000 \
 
 ## Python rewrite
 
-There is also a Flask rewrite of this app, which keeps a pick history and
-lets you add watches from the browser instead of editing seeds.
+There is also a Flask rewrite of this app,
+[python-watch-picker](https://github.com/Shongi/python-watch-picker), which
+keeps a pick history and lets you add watches from the browser instead of
+editing seeds.
 
 ## License
 
