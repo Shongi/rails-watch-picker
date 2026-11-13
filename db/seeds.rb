@@ -34,7 +34,6 @@
 # Helm Vanuatu
 # Christopher Ward Twelve (Ti) Astral Blue
 # Zelos Aurora Field Damascus
-# Bertucci A-2TS Solar Classic
 # Studio Underd0g Field Steffany Blue
 # Zelos Blacktip Ti Aventurine
 # Zelos Eagle 2 Ti Arctic
